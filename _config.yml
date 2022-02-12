@@ -55,7 +55,8 @@ author: BY6DX
 organization: 
 organization_url: 
 github_username: BY6DX
-location: OM81pu
+callsign: BY6DX
+location: "CQ: 24 &nbsp;&nbsp; ITU: 44 &nbsp;&nbsp; Grid: OM81pu &nbsp;&nbsp; QTH: Hefei, Anhui, China"
 email: radio@ustc.edu.cn
 
 # ---------------- #
@@ -106,7 +107,7 @@ paginate: 10
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
-permalink: /:categories/:title.html
+permalink: /:year/:month/:title.html
 plugins:
 #     - jekyll-github-metadata
     - rouge
