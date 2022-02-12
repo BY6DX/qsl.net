@@ -8,3 +8,4 @@ Gemfile.lock
 .vscode/
 .devcontainer/
 .jekyll-metadata
+.jekyll-cache
