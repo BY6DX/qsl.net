@@ -18,7 +18,9 @@ comments: false
               <div class="collection-info">
                 <span class="meta-info">
                   <span class="octicon octicon-broadcast"></span>
-                  {{ site.callsign }}
+                  <a href="https://www.qrz.com/db/{{ site.callsign }}" target="_blank">
+                    {{ site.callsign }}
+                  </a>
                 </span>
                 <span class="meta-info mobile-hidden">
                   <span class="octicon octicon-location"></span>
@@ -53,6 +55,11 @@ comments: false
                 {{ post.excerpt | strip_html | strip }}
                 </p>
                 <p class="repo-list-meta">
+                {% for author in post.author %}
+                <span class="meta-info">
+                  <span class="octicon octicon-person"></span> {{ author }}
+                </span>
+                {% endfor %}
                 <span class="meta-info">
                   <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                 </span>
@@ -78,6 +85,11 @@ comments: false
                 {{ post.excerpt | strip_html | strip }}
                 </p>
                 <p class="repo-list-meta">
+                {% for author in post.author %}
+                <span class="meta-info">
+                  <span class="octicon octicon-person"></span> {{ author }}
+                </span>
+                {% endfor %}
                 <span class="meta-info">
                   <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                 </span>
