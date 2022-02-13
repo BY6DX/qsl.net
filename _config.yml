@@ -91,6 +91,10 @@ navs:
     href: /about/
     label: 关于
 
+  -
+    href: /old/
+    label: 旧版网站
+
 # ---------------- #
 #       RSS        #
 # ---------------- #
