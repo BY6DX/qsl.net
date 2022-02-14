@@ -1,12 +1,13 @@
 #post-directory-module {
     z-index: 999;
+    width: 100%;
 }
 
 .post-directory {
     font-size: 14px;
     background: #fff;
     overflow: hidden;
-    width: 300px;
+    width: 100%;
     padding-bottom: 1em;
     border: 1px solid #efefef;
     color: #999;
@@ -31,7 +32,7 @@
 .post-directory a:hover,
 .post-directory a:active,
 .post-directory a.on {
-    color: #4183c4;
+    color: #003F98;
 }
 
 .posts-list {
