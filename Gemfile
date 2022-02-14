@@ -1,5 +1,4 @@
-# gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll'
+gem 'jekyll', "~> 4.2.0"
 gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'

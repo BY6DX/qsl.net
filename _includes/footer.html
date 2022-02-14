@@ -17,10 +17,10 @@
             <ul class="site-footer-links mobile-hidden">
                 {% for nav in site.navs %}
                 <li>
-                    <a href="{{ site.url }}{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
                 </li>
                 {% endfor %}
-                <li><a href="{{ site.url }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+                <li><a href="{{ site.url }}{{ site.baseurl }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
             </ul>
 
           {% include visit-stat.html %}
@@ -92,7 +92,7 @@ $(document).ready(function(){
     minder.execCommand('hand');
 
     var viewerTipNode = document.createElement("a");
-    viewerTipNode.setAttribute('href', '{{ site.url }}/mindmap-viewer/?data=' + encodeURIComponent(markdownText));
+    viewerTipNode.setAttribute('href', '{{ site.url }}{{ site.baseurl }}/mindmap-viewer/?data=' + encodeURIComponent(markdownText));
     viewerTipNode.setAttribute('target', '_blank');
     viewerTipNode.setAttribute('style', 'font-size:0.8rem;font-style:italic;font-color:grey;');
     viewerTipNode.innerText = '全屏查看';

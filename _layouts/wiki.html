@@ -16,13 +16,13 @@ layout: default
           {% if page.url != '/wiki/' %}
           <span class="meta-info">
             <span class="octicon octicon-file-directory"></span>
-            <a href="{{ site.url }}/wiki/" title="Wiki">Wiki</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/wiki/" title="Wiki">Wiki</a>
           </span>
           {% endif %}
           {% if page.cate1 %}
           <span class="meta-info">
             <span class="octicon octicon-file-directory"></span>
-            <a href="{{ site.url }}/wiki/#{{ page.cate1 | downcase | replace: ' ', '-'}}" title="{{ page.cate1 }}">{{ page.cate1 }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/wiki/#{{ page.cate1 | downcase | replace: ' ', '-'}}" title="{{ page.cate1 }}">{{ page.cate1 }}</a>
           </span>
           {% endif %}
         </div>

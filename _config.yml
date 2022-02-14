@@ -1,8 +1,8 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:
-url: 
+# baseurl: "/by6dx"
+# url: 
 date_format: "ordinal"
 title: 中国科学技术大学学生业余无线电协会
 # subtitle: "公众号：闷骚的程序员"
