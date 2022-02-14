@@ -24,7 +24,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.qsl.net
-          username: BY6DX
+          username: by6dx
           password: ${{ secrets.QSL_NET_PWD }}
           local-dir: ./_site/
           exclude: |
