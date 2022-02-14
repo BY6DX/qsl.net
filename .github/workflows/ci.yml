@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
-        with: 
-          persist-credentials: false
 
       - name: Set Ruby 2.7
         uses: actions/setup-ruby@v1
@@ -20,12 +18,17 @@ jobs:
         run: |
           gem install bundler
           bundle install
-          bundle exec jekyll build
+          bundle exec jekyll build --baseurl /by6dx
         
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: built
-          FOLDER: _site
-          CLEAN: true
+          server: ftp.qsl.net
+          username: BY6DX
+          password: ${{ secrets.QSL_NET_PWD }}
+          local-dir: ./_site/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            /old/**
