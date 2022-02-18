@@ -13,6 +13,6 @@ permalink: /about/
 
 BY6DX 为中国科学技术大学的业余电台，由中国科学技术大学学生业余无线电协会管理和维护使用。
 
-![]({{ site.baseurl }}/images/about_us/ant_by6dx.jpg)
+![](/images/about_us/ant_by6dx.jpg)
 
-![]({{ site.baseurl }}/images/about_us/qsl_card_20_anniversary.jpg)
+![](/images/about_us/qsl_card_20_anniversary.jpg)
